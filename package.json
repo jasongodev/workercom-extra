@@ -10,6 +10,10 @@
         "import": "./dist/workercom-extra.js",
         "require": "./dist/workercom-extra.cjs"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jasongodev/workercom-extra.git"
+    },
     "scripts": {
         "build": "microbundle --compress=false && standard --fix"
     },
