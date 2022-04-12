@@ -1,7 +1,7 @@
 {
     "name": "workercom-extra",
     "version": "0.0.1",
-    "description": "",
+    "description": "This is an extended version of Workercom that includes event listener methods like on() and fire(), and an extended Worker class that serves worker script URL in a CORS-safe fashion.",
     "type": "module",
     "source": "./src/workercom-extra.js",
     "main": "./dist/workercom-extra.cjs",
