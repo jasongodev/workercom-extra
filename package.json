@@ -1,0 +1,29 @@
+{
+    "name": "workercom-extra",
+    "version": "0.0.1",
+    "description": "",
+    "type": "module",
+    "source": "./src/workercom-extra.js",
+    "main": "./dist/workercom-extra.cjs",
+    "module": "./dist/workercom-extra.js",
+    "exports": {
+        "import": "./dist/workercom-extra.js",
+        "require": "./dist/workercom-extra.cjs"
+    },
+    "scripts": {
+        "build": "microbundle --compress=false && standard --fix"
+    },
+    "author": "Jason Go",
+    "license": "MIT",
+    "devDependencies": {
+        "microbundle": "^0.14.2",
+        "standard": "^16.0.4",
+        "workercom": "^1.0.9"
+    },
+    "engines": {
+        "node": ">=14",
+        "npm": ">=8",
+        "pnpm": ">=6"
+    },
+    "packageManager": "pnpm@7.0.0-rc.3"
+}
