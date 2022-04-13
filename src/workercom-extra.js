@@ -93,4 +93,8 @@ function __wrap (ep) {
   return proxyWorker
 }
 
+const GLOBAL = global || self
+GLOBAL.BigInt64Array = GLOBAL.BigInt64Array || class noTypedArray {}
+GLOBAL.BigUint64Array = GLOBAL.BigUint64Array || class noTypedArray {}
+
 export { __expose as expose, __wrap as wrap, fire, WebWorker as Worker, createEndpoint, windowEndpoint, installTransfer, releaseProxy }
