@@ -1,5 +1,5 @@
 /* global self, Worker, Blob */
-import { expose, wrap, createEndpoint, windowEndpoint, installTransfer, releaseProxy } from 'workercom'
+import { expose, wrap, createEndpoint, windowEndpoint, installTransfer, releaseProxy } from '@jasongodev/workercom'
 
 // Source: <https://github.com/parcel-bundler/parcel/blob/master/packages/core/parcel-bundler/src/builtins/bundle-url.js>
 let bundleURL
@@ -92,9 +92,5 @@ function __wrap (ep) {
   })
   return proxyWorker
 }
-
-const GLOBAL = global || self
-GLOBAL.BigInt64Array = GLOBAL.BigInt64Array || class noTypedArray {}
-GLOBAL.BigUint64Array = GLOBAL.BigUint64Array || class noTypedArray {}
 
 export { __expose as expose, __wrap as wrap, fire, WebWorker as Worker, createEndpoint, windowEndpoint, installTransfer, releaseProxy }

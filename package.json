@@ -20,9 +20,9 @@
     "author": "Jason Go",
     "license": "MIT",
     "devDependencies": {
+        "@jasongodev/workercom": "^1.0.10",
         "microbundle": "^0.14.2",
-        "standard": "^16.0.4",
-        "workercom": "^1.0.9"
+        "standard": "^16.0.4"
     },
     "engines": {
         "node": ">=14",

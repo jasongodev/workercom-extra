@@ -353,6 +353,7 @@ function expose (obj,
         default:
           return void 0
       }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err) {
       // eslint-disable-next-line functional/immutable-data
       err[throwError] = true
@@ -672,8 +673,8 @@ const TypedArrayConstructors = [
   Int32Array,
   Uint32Array,
   Float32Array,
-  BigInt64Array,
-  BigUint64Array,
+  typeof BigInt64Array !== 'undefined' ? BigInt64Array : Int8Array,
+  typeof BigUint64Array !== 'undefined' ? BigUint64Array : Int8Array,
   Float64Array
 ]
 function getNameTypedArrayConstructorUsed (typed) {
