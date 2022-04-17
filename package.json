@@ -1,6 +1,6 @@
 {
     "name": "workercom-extra",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "This is an extended version of Workercom that includes event listener methods like on() and fire(), and an extended Worker class that serves worker script URL in a CORS-safe fashion.",
     "type": "module",
     "source": "./src/workercom-extra.js",
@@ -20,7 +20,6 @@
     "author": "Jason Go",
     "license": "MIT",
     "devDependencies": {
-        "@jasongodev/workercom": "^1.0.10",
         "microbundle": "^0.14.2",
         "standard": "^16.0.4"
     },
@@ -29,5 +28,8 @@
         "npm": ">=8",
         "pnpm": ">=6"
     },
-    "packageManager": "pnpm@7.0.0-rc.3"
+    "packageManager": "pnpm@7.0.0-rc.3",
+    "dependencies": {
+        "workercom": "^1.0.10"
+    }
 }

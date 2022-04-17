@@ -1,5 +1,5 @@
 /* global self, Worker, Blob */
-import { expose, wrap, createEndpoint, windowEndpoint, installTransfer, releaseProxy } from '@jasongodev/workercom'
+import { expose, wrap, createEndpoint, windowEndpoint, installTransfer, releaseProxy } from 'workercom'
 
 // Source: <https://github.com/parcel-bundler/parcel/blob/master/packages/core/parcel-bundler/src/builtins/bundle-url.js>
 let bundleURL
